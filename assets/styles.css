@@ -1,0 +1,191 @@
+body{
+    background-color: whitesmoke;
+}
+
+/* Navbar */
+.nav{
+    /* position: fixed; */
+    z-index: 1000;
+    top: 50px;
+    right: 20%;
+    left: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    margin-top: 50px;
+    /* background-color: #27AE60; */
+    background-color: teal;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.10);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.nav .logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img{
+    margin: 0px 10px;
+    width: 30px;
+    height: 30px;
+    box-sizing: content-box;
+}
+
+.nav h4{
+    margin-left: 10px;
+    font-size: 20px;
+    color: white;
+    vertical-align: middle;
+    box-sizing: content-box;
+}
+
+.nav .contact{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav i{
+    margin: 5px 0px;
+}
+
+
+/* Login */
+.modal-title{    
+    padding: 0px 18%;
+}
+
+button[type=button]{
+    position:absolute;
+    top: 10px;
+    left: 250px;
+}
+
+button[type=button]:hover{
+    color: red;
+}
+
+#mh h3,h5{
+    text-align: center;
+}
+
+input[type=text] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size:16px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: teal;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 26px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    font-size:20px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+#ketentuan{
+    padding: 20px;
+    position: relative;
+    margin-bottom: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 128, 128, 0.164);
+    opacity: 0.5;
+}
+
+#ketentuan h5{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+#ketentuan li{
+    text-align: justify;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+
+
+/* Card */
+.menu-wrapper{
+    margin: 50px 20% 50px 20%;
+  }
+  
+  .row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card-01{
+    background: teal;
+    position: relative;
+    flex: 1;
+    max-width: 350px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+  }
+
+  .card-01 h5{
+    margin: 10px 0px;
+  }
+
+  .card-01:hover{
+     background-color: turquoise;
+  }
+
+
+/* =========================================================================================================================== */
+  /* RESPONSIVE */
+
+@media only screen and (max-width: 600px)
+{
+
+    body{
+        background-color: whitesmoke;
+    }
+
+    .nav{
+        flex-direction: column;
+        justify-content: space-around;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: auto;
+        overflow-y: hidden;
+    }
+    
+    .nav h4{
+        font-size: 25px;
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 14px;
+    } 
+
+    .nav .contact{
+        margin-right: 25px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
